@@ -1,0 +1,12 @@
+.StockChart {
+  width: 700px;
+  margin: 20px;
+  padding: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0px 0px 12px -1px black;
+}
+
+.chartTitle {
+  margin-bottom: 30px;
+}

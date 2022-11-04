@@ -14,3 +14,7 @@
   display: flex;
   margin: 20px;
 }
+
+.charts {
+  display: flex;
+}

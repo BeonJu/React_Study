@@ -1,6 +1,6 @@
 import React from 'react';
 // yarn add recharts  https://recharts.org/en-US/ 차트를 그려주는 라이브러리 설치
-import './chart.css';
+import './stockchart.css';
 
 // import { ... } from ''recharts; recharts 라이브러리 안에 사용할 클래스(alias명) 선언
 import {
@@ -26,9 +26,9 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-function Chart({ title, data, datakeyName, datakeyRate, grid }) {
+function StockChart({ title, data, datakeyName, datakeyRate, grid }) {
   return (
-    <div className="chart">
+    <div className="StockChart">
       <h3 className="chartTitle">{title}</h3>
       {/*  aspect 는 width / height 의 비율을 지정 */}
       <ResponsiveContainer aspect={4 / 1} width="100%">
@@ -51,4 +51,4 @@ function Chart({ title, data, datakeyName, datakeyRate, grid }) {
   );
 }
 
-export default Chart;
+export default StockChart;

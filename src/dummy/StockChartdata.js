@@ -1,51 +1,51 @@
-export const userData = [
+export const stockData = [
   {
-    // key: name, salesrate
+    // key: name, stockrate
     name: 'Jan',
-    salesrate: 4000,
+    stockrate: 2000,
   },
   {
     name: 'Feb',
-    salesrate: 3000,
+    stockrate: 5000,
   },
   {
     name: 'Mar',
-    salesrate: 2000,
+    stockrate: 8000,
   },
   {
     name: 'Apr',
-    salesrate: 5000,
+    stockrate: 5000,
   },
   {
     name: 'May',
-    salesrate: 8000,
+    stockrate: 3000,
   },
   {
     name: 'Jun',
-    salesrate: 3000,
+    stockrate: 10000,
   },
   {
     name: 'Jul',
-    salesrate: 1000,
+    stockrate: 8000,
   },
   {
     name: 'Aug',
-    salesrate: 7000,
+    stockrate: 7000,
   },
   {
     name: 'Sep',
-    salesrate: 8000,
+    stockrate: 5000,
   },
   {
     name: 'Oct',
-    salesrate: 9000,
+    stockrate: 4000,
   },
   {
     name: 'Nov',
-    salesrate: 11000,
+    stockrate: 2000,
   },
   {
     name: 'Dec',
-    salesrate: 12000,
+    stockrate: 1000,
   },
 ];
