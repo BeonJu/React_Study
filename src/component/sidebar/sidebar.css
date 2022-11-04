@@ -1,0 +1,62 @@
+.sidebar {
+  /* flex box 의 유연한 레이아웃을 가능케 함 
+    "flex-grow" 와 "flex-shrink" 입니다.
+    두 속성은 "flex-basis" 속성으로 정한 플렉스박스 아이템의
+    기본 너비를 자동으로 늘어나거나(flex-grow) 줄어들도록(flex-shrink)
+    해서 행 안에 적절한 너비로 배치되도록 맞추는 기능
+    */
+  /* Sidebar flex:1, App.css -> .othder flex:4 */
+  /* flex: 1은 풀어서 보면
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0% */
+  flex: 1;
+  /* topbar 높이가 50 px 로 설정을 했기 때문에 sidebar 의 경우는 
+  전체 높이에서 50 px 을 빼고 정하면된다. 이를 적용하기 위해서 "100vh - 50" 
+  이렇게 해주면 topvar 와 중복되지 않게 화면에 보여진다.  */
+  height: calc(100vh - 50px);
+  background-color: rgb(240, 239, 239);
+  /* position: static; 스크롤 없을 땐 static, 스크롤 생기면 sticky(fiexd 효과) 
+  떄문에 top: 50px 설정   */
+  position: sticky;
+  top: 50px;
+  border-radius: 8px;
+}
+/* 사이드 메뉴 CSS 시작 */
+.sidebarWrapper {
+  padding: 20px;
+  color: #555;
+}
+
+.sidebarMenu {
+  /* 최상위 부모의 size * 2 = 2rem */
+  margin-bottom: 2rem;
+}
+
+.sidebarTitle {
+  font-size: 0.9rem;
+  color: rgb(197, 197, 197);
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: rgb(212, 209, 235);
+}
+
+.sidebarIcon {
+  margin-right: 10px;
+  font-size: 25px !important;
+}

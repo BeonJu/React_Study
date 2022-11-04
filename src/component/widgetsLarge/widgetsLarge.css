@@ -1,0 +1,56 @@
+.widgetsLarge {
+  flex: 2;
+  box-shadow: 0px 0px 12px -1px black;
+
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.widgetsLargeImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /*      object-fit: cover; 모든 IE 브라우저에서 호환성 없음*/
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+/* 재사용 Button  */
+.widgetsLargeButton {
+  padding: 5px 7px;
+  border: none;
+  border-radius: 10px;
+}
+/* Button type 별 색상 변경 */
+.widgetsLargeButton.Approved {
+  background-color: #e5faf2;
+  color: #3bb077;
+}
+.widgetsLargeButton.Declined {
+  background-color: #fff0f1;
+  color: #d95087;
+}
+.widgetsLargeButton.Pending {
+  background-color: #ebf1fe;
+  color: #2b7ade;
+}
+
+.widgetsLargeTable {
+  width: 100%;
+  /* border-spacing: 20px; 간격 벌림  */
+  border-spacing: 20px;
+}
+
+.widgetsLargeTr {
+  text-align: left;
+}
+
+.widgetsLargeUser {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.widgetsLargeName {
+  margin-top: 15px;
+}
