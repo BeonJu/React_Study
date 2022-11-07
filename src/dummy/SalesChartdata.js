@@ -1,6 +1,8 @@
 export const salesData = [
   {
-    // key: name, salesrate
+    // key: month, in-bound, out-bound
+    // 5분 간격/시간별, 일 간격 / 주간별, 월 간격/월별, SW toggle으로 차트 변경
+
     name: 'Jan',
     salesrate: 4000,
   },

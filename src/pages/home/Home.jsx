@@ -17,7 +17,7 @@ function Home() {
       <div className="charts">
         <SalesChart
           data={salesData}
-          title="Salse Analytics"
+          title="IDC *** 센터 국내망 Total Traffic"
           grid
           // Chartdata.js에 배열에서 key값으로 데이터 추출 해옵니다.
           datakeyName="name"
@@ -25,7 +25,7 @@ function Home() {
         />
         <StockChart
           data={stockData}
-          title="Stock Analytics"
+          title="IDC *** 센터 해외망 Total Traffic"
           grid
           // Chartdata.js에 배열에서 key값으로 데이터 추출 해옵니다.
           datakeyName="name"

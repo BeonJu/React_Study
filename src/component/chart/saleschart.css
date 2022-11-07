@@ -10,3 +10,9 @@
 .chartTitle {
   margin-bottom: 30px;
 }
+
+.chartSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

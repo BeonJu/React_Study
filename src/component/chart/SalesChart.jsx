@@ -1,7 +1,6 @@
 import React from 'react';
 // yarn add recharts  https://recharts.org/en-US/ 차트를 그려주는 라이브러리 설치
 import './saleschart.css';
-
 // import { ... } from ''recharts; recharts 라이브러리 안에 사용할 클래스(alias명) 선언
 import {
   // 차트 종류
@@ -25,12 +24,19 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
+import Switch from '../switch/Switch';
 
 function SalesChart({ title, data, datakeyName, datakeyRate, grid }) {
   return (
     <div className="SalesChart">
-      <h3 className="chartTitle">{title}</h3>
-      {/*  aspect 는 width / height 의 비율을 지정 */}
+      <div className="chartSwitch">
+        <h3 className="chartTitle">{title}</h3>
+        {/*  aspect 는 width / height 의 비율을 지정 */}
+        {/* SW toggle 로 Hours, Day, Month Traffic Chart Change */}
+        <Switch />
+        <Switch />
+        <Switch />
+      </div>
       <ResponsiveContainer aspect={4 / 1} width="100%">
         {/* linechart에 데이터를 넣고 x축 y축 값을 지정 */}
         {data && (
