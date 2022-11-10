@@ -19,7 +19,7 @@ function Home() {
           data={salesData}
           title="IDC *** 센터 국내망 Total Traffic"
           grid
-          // Chartdata.js에 배열에서 key값으로 데이터 추출 해옵니다.
+          // salesData.js에 배열에서 key값으로 데이터 추출 해옵니다.
           datakeyName="name"
           datakeyRate="salesrate"
         />
@@ -27,7 +27,7 @@ function Home() {
           data={stockData}
           title="IDC *** 센터 해외망 Total Traffic"
           grid
-          // Chartdata.js에 배열에서 key값으로 데이터 추출 해옵니다.
+          // stockData.js에 배열에서 key값으로 데이터 추출 해옵니다.
           datakeyName="name"
           datakeyRate="stockrate"
         />

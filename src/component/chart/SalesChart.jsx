@@ -25,17 +25,49 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import Switch from '../switch/Switch';
+import { useState } from 'react';
 
 function SalesChart({ title, data, datakeyName, datakeyRate, grid }) {
+  // Switch Toggle 체크 박스를 클릭 시 각 각 동작 하기 위하여 setValue를 1~3까지 선언 했습니다.
+  const [value1, setValue1] = useState(false);
+  const [value2, setValue2] = useState(false);
+  const [value3, setValue3] = useState(false);
   return (
     <div className="SalesChart">
       <div className="chartSwitch">
         <h3 className="chartTitle">{title}</h3>
         {/*  aspect 는 width / height 의 비율을 지정 */}
         {/* SW toggle 로 Hours, Day, Month Traffic Chart Change */}
-        <Switch />
-        <Switch />
-        <Switch />
+        <Switch
+          isOn={value1}
+          onColor="#EF476F"
+          isId="react-switch-new-01"
+          handleToggle={() => {
+            setValue1(!value1);
+            setValue2(value2);
+            setValue3(value3);
+          }}
+        />
+        <Switch
+          isOn={value2}
+          onColor="#06D6A0"
+          isId="react-switch-new-02"
+          handleToggle={() => {
+            setValue1(value1);
+            setValue2(!value2);
+            setValue3(value3);
+          }}
+        />
+        <Switch
+          isOn={value3}
+          onColor="#FF8000"
+          isId="react-switch-new-03"
+          handleToggle={() => {
+            setValue1(value1);
+            setValue2(value2);
+            setValue3(!value3);
+          }}
+        />
       </div>
       <ResponsiveContainer aspect={4 / 1} width="100%">
         {/* linechart에 데이터를 넣고 x축 y축 값을 지정 */}
