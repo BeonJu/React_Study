@@ -17,6 +17,7 @@ const Switch = ({ isOn, handleToggle_enable, onColor, isId }) => {
         // id={`react-switch-new`}
         id={isId}
         type="checkbox"
+        //  ref={}
       />
       <label
         style={{

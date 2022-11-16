@@ -21,35 +21,35 @@ console.log(
   RandomFunction().props.children[1].outbound
 );
 
-function Setbound() {
-  const intervalId = useRef(null);
-  const startbounds = () => {
-    intervalId.current = setInterval(
-      () =>
-        // bound 값에 랜덤 함수 값 지정
-        (isDomesticNetworkTrafficOneHour.onehour = Array(25)
-          .fill()
-          .map((v) => {
-            return (
-              (v.inbound = RandomFunction().props.children[1].inbound),
-              (v.outbound = RandomFunction().props.children[1].outbound)
-            );
-          })),
-      5000
-    );
-  };
-  const stopbounds = () => {
-    clearInterval(intervalId.current);
-  };
+// function Setbound() {
+//   const intervalId = useRef(null);
+//   const startbounds = () => {
+//     intervalId.current = setInterval(
+//       () =>
+//         // bound 값에 랜덤 함수 값 지정
+//         (isDomesticNetworkTrafficOneHour.onehour = Array(25)
+//           .fill()
+//           .map((v) => {
+//             return (
+//               (v.inbound = RandomFunction().props.children[1].inbound),
+//               (v.outbound = RandomFunction().props.children[1].outbound)
+//             );
+//           })),
+//       5000
+//     );
+//   };
+//   const stopbounds = () => {
+//     clearInterval(intervalId.current);
+//   };
 
-  if (Switch.isId === 'react-switch-new-01' && Switch.isOn === true) {
-    startbounds();
-  } else if (Switch.isOn === false) {
-    stopbounds();
-  }
-}
+//   if (Switch.isId === 'react-switch-new-01' && Switch.isOn === true) {
+//     startbounds();
+//   } else if (Switch.isOn === false) {
+//     stopbounds();
+//   }
+// }
 
-Setbound();
+// Setbound();
 
 function Home() {
   return (
