@@ -27,7 +27,6 @@ import {
 
 import Switch from '../switch/Switch';
 import { useState } from 'react';
-import RandomFunction from '../../dummy/RandomFunction';
 
 function SalesChart({
   title,
@@ -61,13 +60,6 @@ function SalesChart({
   const onFalseVal3 = () => {
     setValue3((value3) => (value3 = false));
   };
-
-  // var [bound, setBound] = useState({
-  //   inBound: '',
-  //   outBound: '',
-  // });
-
-  console.log(RandomFunction());
 
   return (
     <div className="SalesChart">
@@ -115,8 +107,12 @@ function SalesChart({
         <LineChart data={data}>
           {/* X축 const data.name이 key 값이 된다. stroke는 x축의 색상 코드이다 */}
           <XAxis dataKey={datakeyName} stroke="#5550bd" />
-          <Line type="monotone" dataKey={0} stroke="#66FF66" />
-          <Line type="monotone" dataKey={0} stroke="#0000FF" />
+          <Line type="monotone" dataKey={datakeyRateInBound} stroke="#66FF66" />
+          <Line
+            type="monotone"
+            dataKey={datakeyRateOutBound}
+            stroke="#0000FF"
+          />
           {/* 마우스로 그래프 hover시 data 출력 */}
           <Tooltip />
           {/* 데카르트 좌표?   */}
